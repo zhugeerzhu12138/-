@@ -1,0 +1,6 @@
+Linux开机自启rc.local开机n秒后执行一条命令:
+在rc.local中exit 0前加
+（
+sleep n
+ifconfig eth1 hw ether 11:22:33:44:55:66
+）&
